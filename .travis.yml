@@ -11,9 +11,9 @@ deploy:
     on:
       branch: master
   - provider: pypi
-    skip_cleanup: true
     user: openfisca-bot
     password:
       secure: JVbeDypEiDIzHQjn+KcUcP5CJuUK594Dwjd8nms6hw00sFaMw1Kf1JBT4DGyMpqF7TwBKeeFU71XYVp+cFDfKkxE80G/dFNqsB9uJOjErS1OQqwkpIjBJ5WR1Z9UpD/9XwyitAXrRb93tUh1y1eNKp4Iicfjffx6yNogngLRIaY3kMHQUflQT4aDViyXae0uFCVtQBUvS7ZqAwU0/sCOiIZYSH2VjjdLINEr/Qsiv6nbJMFBZ8oNY1RQ2wWPzmAAtK8gStUA+6aD74hwyTbdVTl4EBoMlDGGj9fNSHKMOVWYOnr1ypYFR0VVFODglqcfpc9wksnVwTEjjqxPCN+D2e0oUa3AcQvjSJZXx+k45SSt2PPUaEkmqSufbKN5y++Of6rEuSiXc6H/FwFcGYbSdT3nIEDfdja8e7JsMTdevJDYxS73Xsyoor0qDTjYv4bw6juczhWTsKm9N0myqOTBjpWP9qHqsl4FB0llZzTKcF7PYuxMgqr5uN3SW/kR9ZMQbSbRBNi8G/QdDbIn2rl1K0YzdyiOnoghqIRhORGQIOFBMrZXbVYQO5Tw6XNF+2M5zL0RdUoEblqe+JTt7oENZnC+wAnyJfHeB/9pgAliBx2+RaOjrVchKYuljC5BtNWPIDxUCO5kXDdgUF58FFTWRJiYWxe+v1K/N5ifzFdberI=
+    distributions: "bdist_wheel"
     on:
       tags: true
