@@ -4,6 +4,6 @@ python:
 script: bash run-tests.sh
 deploy:
     provider: script
-    script: release.sh
+    script: ./release.sh
     on:
         branch: master
