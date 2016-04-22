@@ -1,1 +1,4 @@
 id_travis-tests
+*.egg-info
+build/*
+dist/*
