@@ -6,7 +6,12 @@ before_deploy:
 - openssl aes-256-cbc -K $encrypted_054ac993e497_key -iv $encrypted_054ac993e497_iv -in id_travis-tests.enc -out id_travis-tests -d
 deploy:
   skip_cleanup: true
-  provider: script
-  script: ./release.sh
-  on:
-    branch: master
+  - provider: script
+    script: ./release.sh
+    on:
+      branch: master
+  - provider: pypi
+    user: openfisca-bot
+    on:
+      tags: true
+
