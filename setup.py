@@ -3,6 +3,6 @@
 from setuptools import setup
 
 setup(name='fpagnoux-travis-test',
-      version='1.0',
+      version='0.3',
       packages=['fpagnoux-travis-test'],
      )

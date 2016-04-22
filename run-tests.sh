@@ -1,2 +1,1 @@
-version=`cat ./version`
-echo "Allright, we should release $version"
+echo "Allright, no problem with tests"

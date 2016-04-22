@@ -1,4 +1,4 @@
-version=`cat ./version`
+version=`python setup.py --version`
 eval "$(ssh-agent -s)" #start the ssh agent
 chmod 400 ./id_travis-tests
 ssh-add ./id_travis-tests
