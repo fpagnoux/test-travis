@@ -2,7 +2,10 @@ import tempfile, subprocess, glob
 
 temp_dir = tempfile.mkdtemp()
 path = 'https://github.com/sgmap/openfisca-paris.git'
-return_code = subprocess.call('git clone ' + path + ' ' + temp_dir + ' &> /dev/null', shell = True)
+command = 'git clone ' + path + ' ' + temp_dir
+print("Command:")
+print(command)
+return_code = subprocess.call(command, shell = True)
 print("Return code:")
 print(return_code)
 content_folder = glob.glob(temp_dir + '/*.*')
